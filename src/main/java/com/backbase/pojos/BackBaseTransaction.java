@@ -1,10 +1,14 @@
 package com.backbase.pojos;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
+@Builder
+@AllArgsConstructor
 public class BackBaseTransaction {
 	private String id;
 	private String accountId;
