@@ -1,3 +1,3 @@
-insert into USER (USERNAME,PASSWORD)
+insert into USER_ENTITY (USERNAME,PASSWORD)
 values ('rnunez', 'rnunezpwd'),
        ('aortega', 'aortegapwd');
