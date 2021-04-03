@@ -54,4 +54,15 @@ to execute shell to start the web application
 - You can also try to send the requests without the token and you'll see 401 Unauthorized responses. You can import the commands to postman for a more graphic experience.
 
 
+# Things covered:
+
+- Tomcat Embedded (8.5)
+- JDK 8
+- Spring 5
+- Maven
+- Junit coverage
+- Camel used for integration with external endpoint
+- Logging configured
+
+
 Enjoy  :) 

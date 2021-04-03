@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class JwtTokenRequest implements Serializable {
+	
 	private static final long serialVersionUID = 502593362163929418L;
 	private String username;
     private String password;
