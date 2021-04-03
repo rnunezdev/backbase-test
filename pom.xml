@@ -146,17 +146,6 @@
 			<version>1.4.200</version>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
-    		<groupId>com.zaxxer</groupId>
-    		<artifactId>HikariCP</artifactId>
-    		<version>3.4.5</version>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.14</version>
-			<scope>runtime</scope>
-		</dependency>
 		
 	</dependencies>
 	<build>

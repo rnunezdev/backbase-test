@@ -25,7 +25,7 @@ public class JPAConfig {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.h2.Driver");
-        dataSource.setUrl("jdbc:h2:mem:backbase-test-db");
+        dataSource.setUrl("jdbc:h2:mem:backbase-test-db;DB_CLOSE_DELAY=-1");
         dataSource.setUsername("root");
         dataSource.setPassword("password");
  
@@ -40,7 +40,6 @@ public class JPAConfig {
     	
     	HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         vendorAdapter.setDatabase(Database.H2);
-        vendorAdapter.setGenerateDdl(true);
         vendorAdapter.setShowSql(true);
  
         LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
@@ -55,6 +54,8 @@ public class JPAConfig {
     
     private Properties jpaProperties() {  
         Properties properties = new Properties();  
+        properties.put("hibernate.hbm2ddl.auto", "create-drop");
+        properties.put("hibernate.hbm2ddl.import_files", "data.sql");
         properties.put("hibernate.show_sql", "true");  
         return properties;  
     }  
